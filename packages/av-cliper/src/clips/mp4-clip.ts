@@ -106,8 +106,14 @@ export class MP4Clip implements IClip {
   #volume = 1;
 
   #videoSamples: ExtMP4Sample[] = [];
-
   #audioSamples: ExtMP4Sample[] = [];
+  async getSamples() {
+    await this.ready;
+    return {
+      videoSamples: this.#videoSamples,
+      audioSamples: this.#audioSamples,
+    };
+  }
 
   #videoFrameFinder: VideoFrameFinder | null = null;
   #audioFrameFinder: AudioFrameFinder | null = null;
