@@ -1,5 +1,19 @@
 # @webav/av-cliper
 
+## 1.2.3
+
+### Patch Changes
+
+- 06d34b4: fix: rotation direction is reversed
+  - @webav/internal-utils@1.2.3
+
+## 1.2.2
+
+### Patch Changes
+
+- 2d4eec1: fix: MP4Clip has not adapted to the video track’s matrix settings
+  - @webav/internal-utils@1.2.2
+
 ## 1.2.1
 
 ### Patch Changes
