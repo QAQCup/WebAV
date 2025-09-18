@@ -121,7 +121,6 @@ export class MP4Clip implements IClip {
   #volume = 1;
 
   #videoSamples: ExtMP4Sample[] = [];
-  
   #audioSamples: ExtMP4Sample[] = [];
 
   #videoFrameFinder: VideoFrameFinder | null = null;
